@@ -1,3 +1,5 @@
 FROM ubuntu
-RUN apt update
-RUN apt install curl --yes
+RUN apt update && \
+    apt install tree --yes && \
+    apt install vim --yes && \
+    apt install curl --yes
